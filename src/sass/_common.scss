@@ -1,0 +1,31 @@
+@charset "utf-8";//设置编码格式
+@import "compass/reset";//引入重置模块
+$wrap_width:1070px;
+$size100:100%;
+$gray:(f5:#f5f5f5,f4:#f4f4f4,fc:#fcfcfc);
+
+@mixin border($style:solid, $width:1px, $color:#f5f5f5) {
+    border: $style $width $color;
+}
+// .clearfix::after{
+//     content:'.';
+//     height:0;
+//     display: block;
+//     overflow: hidden;
+//     visibility: hidden;
+//     clear: both;
+// }
+.clearfix::after{
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+
+.wrap{
+    width:$wrap_width;
+    margin:0 auto;
+    position: relative;
+}
