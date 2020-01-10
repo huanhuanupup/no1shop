@@ -1,0 +1,8 @@
+@import "common";
+#super{
+    .wrap{
+        width:$wrap_width;
+        height:370px;
+        background-image: url(https://img.yihaodianimg.com/front-homepage/index/images/super_single_bg.png);
+    }
+}
