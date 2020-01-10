@@ -1,8 +1,29 @@
 @import "common";
 #super{
+    margin-top: 20px;
+    position: relative;
+    height:444px;
     .wrap{
-        width:$wrap_width;
         height:370px;
         background-image: url(https://img.yihaodianimg.com/front-homepage/index/images/super_single_bg.png);
+        ul{
+            width: 1050px;
+            height: 432px;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            background-color: seagreen;
+        }
     }
+    
+}
+aside{
+    width:100px;
+    height:175px;
+    background-color: silver;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left: 540px;
+    margin-top:-87px;
 }

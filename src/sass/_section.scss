@@ -1,0 +1,11 @@
+@import "common";
+#sec{
+    .wrap{
+        section{
+            width:$wrap_width;
+            height: 421px;
+            margin-top:20px;
+            background-color: #fff;
+        }
+    }
+}
