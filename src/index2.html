@@ -9,15 +9,35 @@
     <meta name="Keywords" content="1号店,一号店,网上超市,1号店网上超市,yhd.com">
     <meta name="Description"
         content="1号店(yhd.com)网上超市精选全球好货，提供休闲零食、母婴玩具、进口食品、服饰内衣，1号生鲜、家电家居、手机电脑、宠物用品等各个品类的优质商品。1号店（yhd.com）全球超市，轻松到家！">
-    <!-- <link rel="import" href="top.html" id="page1"> -->
     <link rel="stylesheet" href="../src/css/index.css">
+    <!---引入index.html的css文件--->
 </head>
 
 <body>
-    <div id="div" class="clearfix">
-        <iframe align="center" width="100%" height="212" src="top.html" frameborder="no" border="0" marginwidth="0"
-            marginheight="0" scrolling="no"></iframe>
+    <!-------------------------------------------头部------------------------------------------------------->
+    <header id="header"></header>
+    <div id="header_fixed">
+        <div class="wrap">
+            <a href="#">
+                <img src="" alt="">
+            </a>
+            <div class="search">
+                <div class="up">
+                    <input type="text" placeholder="华帝燃气灶" maxLength="100" autocomplete="off">
+                    <button>
+                        <i class="icon iconfont"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="#" class="cart_content">
+                    <em class="icon iconfont"></em>
+                    <span>购物车</span>
+                </a>
+            </div>
+        </div>
     </div>
+    <!------------------------------------------banner------------------------------------------------------>
     <div id="banner">
         <div class="wrap ban-wrap">
             <div class="ban-list"></div>
@@ -30,6 +50,7 @@
             </div>
         </div>
     </div>
+    <!-------------------------------------------新人------------------------------------------------------->
     <div id="ad">
         <div class="wrap">
             <a href="#">
@@ -38,12 +59,15 @@
             </a>
         </div>
     </div>
+    <!-----------------------------------------超级单品----------------------------------------------------->
     <div id="super" class="clearfix">
         <div class="wrap">
             <ul></ul>
         </div>
     </div>
+    <!-------------------------------------------aside------------------------------------------------------>
     <aside></aside>
+    <!-------------------------------------------内容------------------------------------------------------->
     <div id="sec" class="clearfix">
         <div class="wrap">
             <section class="section_1"></section>
@@ -51,6 +75,7 @@
             <section class="section_3"></section>
         </div>
     </div>
+    <!-----------------------------------------猜你喜欢------------------------------------------------------>
     <div id="want">
         <div class="wrap">
             <div class="want_top">
@@ -68,6 +93,20 @@
             </div>
         </div>
     </div>
+    <!-------------------------------------------尾部------------------------------------------------------->
+    <footer id="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- cdn内容分发网络引入jQuery插件 -->
+    <script>
+        $(document).ready(function () {
+            $("#header").load("http://localhost/no1shop/src/header.html");
+            //在页面装载时，在ID为#header的DOM元素里插入header.html的内容。
+            //加载页头
+            $("footer").load("http://localhost/no1shop/src/footer.html");
+            //在页面装载时，在ID为#header的DOM元素里插入header.html的内容。
+            //加载页尾
+        })
+    </script>
 </body>
 
 </html>

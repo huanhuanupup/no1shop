@@ -1,14 +1,14 @@
 @import "common";
 footer{
+    background:#fff;
     .wrap{
-        background:#fff;
         .footer_server{
             padding: 30px 0;
             border-bottom: 1px solid #ebebeb;
         }
     }
 }
-footer a{
+footer .serverbox{
         float:left;
         width:205px;
         margin-right:81px;
@@ -34,7 +34,7 @@ footer a{
             line-height: 26px;
         }
 }
-footer a:last-child{
+footer .serverbox:last-child{
     margin-right:0;
 }
 .footer_role{
@@ -77,6 +77,7 @@ footer a:last-child{
         a{
             color: #666;
             font-size: 12px;
+            text-decoration: none;
             &:hover{color: #e60012}
         }
     }
@@ -99,6 +100,39 @@ footer a:last-child{
                 width:90px;
                 height:90px;
             }
+        }
+    }
+}
+.footer_link{
+    p{
+        color: #666;
+        text-align: center;
+        text-indent: 0;
+        line-height: 100%;
+        margin: 15px 0;
+        padding: 0;
+        a{
+            // display: block;
+            margin:0 3px;
+            color:#333;
+            text-decoration: none;
+            &:hover{
+                color:#c00;
+            }
+        }
+    }
+}
+.link{
+    display: block;
+    padding: 10px 0 20px;
+    text-align: center;
+    font-size: 0;
+    a{
+        display: inline-block;
+        margin: 0 4px;
+        text-decoration: none;
+        img{
+            vertical-align: top;
         }
     }
 }
