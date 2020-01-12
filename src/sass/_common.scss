@@ -4,6 +4,10 @@ $wrap_width:1070px;
 $size100:100%;
 $gray:(f5:#f5f5f5,f4:#f4f4f4,fc:#fcfcfc);
 
+%wrap100 {
+    width:$size100;
+    height:$size100;
+}
 @mixin border($style:solid, $width:1px, $color:#f5f5f5) {
     border: $style $width $color;
 }

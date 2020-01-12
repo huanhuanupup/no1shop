@@ -64,11 +64,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 7, ../sass/_common.scss */
+.ban-list, .ban-list .wrap100, .ban-list .wrap100 ul, .ban-list .wrap100 ul li {
+  width: 100%;
+  height: 100%;
+}
+
 @font-face {
   font-family: iconfont;
   src: url(../fonts/iconfont.woff) format("woff");
 }
-/* line 14, ../sass/_common.scss */
+/* line 18, ../sass/_common.scss */
 .iconfont {
   font-family: "iconfont";
   font-size: 16px;
@@ -76,7 +82,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 20, ../sass/_common.scss */
+/* line 24, ../sass/_common.scss */
 .clearfix::after {
   content: "";
   height: 0;
@@ -86,21 +92,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   visibility: hidden;
 }
 
-/* line 29, ../sass/_common.scss */
+/* line 33, ../sass/_common.scss */
 .wrap {
   width: 1070px;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 34, ../sass/_common.scss */
+/* line 38, ../sass/_common.scss */
 body {
   color: #333;
   background-color: #f5f5f5;
   font: 12px "Microsoft YaHei", Helvetica Neue, tahoma, Arial, Verdana, "Hiragino Sans GB", "宋体";
 }
 
-/* line 39, ../sass/_common.scss */
+/* line 43, ../sass/_common.scss */
 a {
   text-decoration: none;
   color: #666;
@@ -526,7 +532,7 @@ header .top .right .logined {
   color: #ff4040;
 }
 
-/* line 370, ../sass/_header.scss */
+/* line 371, ../sass/_header.scss */
 #header_fixed {
   width: 100%;
   height: 60px;
@@ -537,6 +543,94 @@ header .top .right .logined {
   left: 0;
   top: 0;
   z-index: 1000;
+}
+/* line 381, ../sass/_header.scss */
+#header_fixed a {
+  display: block;
+  width: 150px;
+  height: 60px;
+  float: left;
+  margin-right: 70px;
+}
+/* line 387, ../sass/_header.scss */
+#header_fixed a img {
+  width: 100%;
+  height: 100%;
+}
+/* line 392, ../sass/_header.scss */
+#header_fixed .search {
+  float: left;
+  border-radius: 100px;
+  padding: 2px;
+  margin-top: 10px;
+  position: relative;
+  background-color: #ff4040;
+  overflow: hidden;
+}
+/* line 400, ../sass/_header.scss */
+#header_fixed .search input {
+  float: left;
+  width: 406px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 32px;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  color: #333;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+/* line 414, ../sass/_header.scss */
+#header_fixed .search button {
+  float: left;
+  width: 68px;
+  height: 38px;
+  line-height: 36px;
+  background-color: #ff4040;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+/* line 425, ../sass/_header.scss */
+#header_fixed .search button i {
+  font-size: 24px;
+  text-decoration: none;
+  font-style: normal;
+}
+/* line 432, ../sass/_header.scss */
+#header_fixed .cart {
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+}
+/* line 438, ../sass/_header.scss */
+#header_fixed .cart a {
+  text-decoration: none;
+  display: block;
+  width: 120px;
+  height: 20px;
+  overflow: hidden;
+  padding: 9px 0 9px;
+  border: 1px solid #e2e2e2;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #fff;
+  text-align: center;
+  line-height: 20px;
+  color: #333;
+  font-size: 16px;
+}
+/* line 453, ../sass/_header.scss */
+#header_fixed .cart a em {
+  margin-right: 6px;
+  font-size: 18px;
+  color: #272636;
 }
 
 /* line 2, ../sass/_banner.scss */
@@ -552,14 +646,44 @@ header .top .right .logined {
   margin-bottom: 40px;
 }
 
-/* line 12, ../sass/_banner.scss */
-.ban-list {
-  background-color: #cc6666;
-  width: 100%;
-  height: 100%;
+/* line 19, ../sass/_banner.scss */
+.ban-list .wrap100 ul li {
+  position: absolute;
+  z-index: 0;
 }
 
-/* line 17, ../sass/_banner.scss */
+/* line 29, ../sass/_banner.scss */
+.ban-list li:nth-child(1) .img {
+  background-image: url(http://img10.360buyimg.com/img/jfs/t1/101229/38/8899/85145/5e095450E09bde9ec/d0f1e5f341126eec.jpg);
+}
+/* line 32, ../sass/_banner.scss */
+.ban-list li:nth-child(2) .img {
+  background-image: url(http://img13.360buyimg.com/img/jfs/t1/97657/34/9786/82840/5e12a5d4E56027b1f/348743bc8f2d7652.jpg);
+}
+/* line 35, ../sass/_banner.scss */
+.ban-list li:nth-child(3) .img {
+  background-image: url(http://img11.360buyimg.com/img/jfs/t1/110429/23/3574/84908/5e12a69eE0c4eaa5d/9939f832724162fd.jpg);
+}
+/* line 38, ../sass/_banner.scss */
+.ban-list a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: 1920px;
+}
+/* line 44, ../sass/_banner.scss */
+.ban-list .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1070px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 56, ../sass/_banner.scss */
 .ban-tab {
   margin: 0 auto;
   height: 40px;
@@ -568,19 +692,34 @@ header .top .right .logined {
   top: -30px;
   z-index: 100;
   cursor: pointer;
-  background-color: #9b0e0e;
 }
-/* line 26, ../sass/_banner.scss */
+/* line 64, ../sass/_banner.scss */
 .ban-tab ul {
-  background-color: #9b0e0e;
+  display: flex;
+  justify-content: center;
 }
-/* line 29, ../sass/_banner.scss */
+/* line 68, ../sass/_banner.scss */
 .ban-tab li {
-  float: left;
+  margin-right: 10px;
+  display: inline-block;
+  width: 110px;
+  overflow: hidden;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  line-height: 40px;
+  cursor: pointer;
 }
-/* line 32, ../sass/_banner.scss */
-.ban-tab li:nth-child(2) {
-  margin: 0 8px;
+/* line 81, ../sass/_banner.scss */
+.ban-tab ul:nth-child(3) {
+  margin-right: 0;
+}
+/* line 84, ../sass/_banner.scss */
+.ban-tab .active {
+  color: #fff;
+  background-color: #333;
 }
 
 /* line 2, ../sass/_super.scss */
@@ -608,12 +747,78 @@ header .top .right .logined {
 aside {
   width: 100px;
   height: 175px;
-  background-color: silver;
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 0;
   left: 50%;
   margin-left: 540px;
-  margin-top: -87px;
+}
+/* line 31, ../sass/_super.scss */
+aside .a_top {
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  line-height: 14px;
+}
+/* line 37, ../sass/_super.scss */
+aside .a_top p {
+  height: 30px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+/* line 45, ../sass/_super.scss */
+aside .a_top img:nth-child(2) {
+  width: 76px;
+  cursor: pointer;
+}
+/* line 49, ../sass/_super.scss */
+aside .a_top img:nth-child(3) {
+  width: 100px;
+}
+/* line 53, ../sass/_super.scss */
+aside .a_middle {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+/* line 64, ../sass/_super.scss */
+aside .a_middle i {
+  color: #272636;
+  font-family: "iconfont";
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+}
+/* line 72, ../sass/_super.scss */
+aside .a_bottom {
+  font-size: 14px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 29px;
+  background-color: #444;
+  color: #fff;
+  font-family: Tahoma;
+  cursor: pointer;
+  display: block;
+}
+/* line 83, ../sass/_super.scss */
+aside .a_bottom i {
+  color: #fff;
+  position: relative;
+  top: 2px;
+  font-size: 20px;
+  font-family: "iconfont";
 }
 
 /* line 4, ../sass/_section.scss */
