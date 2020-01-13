@@ -740,10 +740,200 @@ header .top .right .logined {
   margin: 0 auto;
   position: relative;
   top: 10px;
-  background-color: seagreen;
+}
+/* line 15, ../sass/_super.scss */
+#super .wrap ul li {
+  width: 210px;
+  height: 216px;
+  float: left;
+  font-size: 14px;
+}
+/* line 21, ../sass/_super.scss */
+#super .wrap ul .content {
+  background-color: #fff;
+}
+/* line 23, ../sass/_super.scss */
+#super .wrap ul .content:hover {
+  box-shadow: 0 5px 31px 0 rgba(0, 0, 0, 0.09);
+  transform: scale(1.06);
 }
 
-/* line 20, ../sass/_super.scss */
+/* line 32, ../sass/_super.scss */
+#super .wrap ul .super_single {
+  background: 0;
+}
+/* line 34, ../sass/_super.scss */
+#super .wrap ul .super_single img {
+  width: 129px;
+  height: 36px;
+  margin-left: 20px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+/* line 41, ../sass/_super.scss */
+#super .wrap ul .super_single .line {
+  width: 180px;
+  height: 40px;
+  margin-left: 24px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 47, ../sass/_super.scss */
+#super .wrap ul .super_single .line span:nth-child(1) {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 8px;
+  height: 22px;
+  float: left;
+  font-weight: bold;
+  overflow: hidden;
+}
+/* line 56, ../sass/_super.scss */
+#super .wrap ul .super_single .line span:nth-child(2) {
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  height: 1px;
+  width: 28px;
+  left: 0px;
+  top: 27px;
+}
+/* line 65, ../sass/_super.scss */
+#super .wrap ul .super_single .date {
+  width: 137px;
+  height: 66px;
+  margin-left: 24px;
+  margin-top: 10px;
+}
+/* line 70, ../sass/_super.scss */
+#super .wrap ul .super_single .date .date_title {
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* line 75, ../sass/_super.scss */
+#super .wrap ul .super_single .date .date_title .icon {
+  font-family: "iconfont";
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+}
+/* line 82, ../sass/_super.scss */
+#super .wrap ul .super_single .date .date_time {
+  font-size: 0;
+  text-align: center;
+  margin-top: 9px;
+}
+/* line 86, ../sass/_super.scss */
+#super .wrap ul .super_single .date .date_time i {
+  display: inline-block;
+  width: 16px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top: -3px;
+  font-style: normal;
+}
+/* line 99, ../sass/_super.scss */
+#super .wrap ul .super_single .date .date_time .time_inner {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #161616;
+  color: #fff;
+  font-size: 20px;
+  font-family: Tahoma;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* line 117, ../sass/_super.scss */
+#super .wrap ul .content a .content_top {
+  width: 210px;
+  height: 135px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+/* line 124, ../sass/_super.scss */
+#super .wrap ul .content a .content_top img {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -55px;
+}
+/* line 133, ../sass/_super.scss */
+#super .wrap ul .content a .content_bottom {
+  height: 81px;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 138, ../sass/_super.scss */
+#super .wrap ul .content a .content_bottom .c_title {
+  font-size: 14px;
+  width: 153px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 146, ../sass/_super.scss */
+#super .wrap ul .content a .content_bottom .c_bar {
+  width: 150px;
+  height: 6px;
+  margin-top: 10px;
+  background-color: #e2e2e2;
+  border-radius: 100px;
+}
+
+/* line 157, ../sass/_super.scss */
+.content_bottom .c_bar div {
+  width: 53%;
+  height: 100%;
+  background-color: #d9161d;
+  border-radius: 100px;
+}
+
+/* line 163, ../sass/_super.scss */
+.content_bottom .c_num {
+  height: 33px;
+  padding-top: 12px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 169, ../sass/_super.scss */
+.content_bottom .c_num .c_inner {
+  display: inline-block;
+  font-family: Tahoma,"Microsoft YaHei";
+  color: #e50113;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* line 175, ../sass/_super.scss */
+.content_bottom .c_num .c_inner .c_left {
+  margin-left: -3px;
+}
+/* line 178, ../sass/_super.scss */
+.content_bottom .c_num .c_inner .c_before {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #999;
+  font-weight: normal;
+  margin-left: 4px;
+}
+
+/* line 187, ../sass/_super.scss */
 aside {
   width: 100px;
   height: 175px;
@@ -752,7 +942,7 @@ aside {
   left: 50%;
   margin-left: 540px;
 }
-/* line 31, ../sass/_super.scss */
+/* line 198, ../sass/_super.scss */
 aside .a_top {
   background-color: #fff;
   font-size: 14px;
@@ -760,7 +950,7 @@ aside .a_top {
   text-align: center;
   line-height: 14px;
 }
-/* line 37, ../sass/_super.scss */
+/* line 204, ../sass/_super.scss */
 aside .a_top p {
   height: 30px;
   line-height: 34px;
@@ -769,16 +959,16 @@ aside .a_top p {
   color: #333;
   text-align: center;
 }
-/* line 45, ../sass/_super.scss */
+/* line 212, ../sass/_super.scss */
 aside .a_top img:nth-child(2) {
   width: 76px;
   cursor: pointer;
 }
-/* line 49, ../sass/_super.scss */
+/* line 216, ../sass/_super.scss */
 aside .a_top img:nth-child(3) {
   width: 100px;
 }
-/* line 53, ../sass/_super.scss */
+/* line 220, ../sass/_super.scss */
 aside .a_middle {
   width: 100%;
   height: 40px;
@@ -791,7 +981,7 @@ aside .a_middle {
   text-align: center;
   line-height: 40px;
 }
-/* line 64, ../sass/_super.scss */
+/* line 231, ../sass/_super.scss */
 aside .a_middle i {
   color: #272636;
   font-family: "iconfont";
@@ -799,7 +989,7 @@ aside .a_middle i {
   position: relative;
   top: 1px;
 }
-/* line 72, ../sass/_super.scss */
+/* line 239, ../sass/_super.scss */
 aside .a_bottom {
   font-size: 14px;
   width: 100%;
@@ -812,7 +1002,7 @@ aside .a_bottom {
   cursor: pointer;
   display: block;
 }
-/* line 83, ../sass/_super.scss */
+/* line 250, ../sass/_super.scss */
 aside .a_bottom i {
   color: #fff;
   position: relative;
@@ -821,12 +1011,387 @@ aside .a_bottom i {
   font-family: "iconfont";
 }
 
-/* line 4, ../sass/_section.scss */
+/* line 5, ../sass/_section.scss */
 #sec .wrap section {
   width: 1070px;
   height: 421px;
   margin-top: 20px;
   background-color: #fff;
+}
+
+/* line 14, ../sass/_section.scss */
+#sec .wrap section .sec_left {
+  width: 899px;
+  height: 421px;
+  float: left;
+}
+/* line 18, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_title {
+  height: 67px;
+  display: block;
+}
+/* line 21, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_title .sec_big {
+  height: 35px;
+  margin-left: 20px;
+  margin-top: 17px;
+  font-size: 26px;
+  color: #65c73e;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 190px;
+  overflow: hidden;
+}
+/* line 32, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_title .sec_small {
+  color: rgba(101, 199, 62, 0.7);
+  margin-left: 8px;
+  font-size: 16px;
+  margin-top: 27px;
+  height: 21px;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 208px;
+  overflow: hidden;
+  position: relative;
+  top: -3px;
+}
+/* line 46, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_con {
+  width: 880px;
+  height: 334px;
+  position: relative;
+  padding-left: 20px;
+}
+/* line 51, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_con img {
+  position: relative;
+  width: 189px;
+  height: 334px;
+  float: left;
+}
+/* line 57, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_con .sec_type {
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  width: 176px;
+  height: 90px;
+  margin-left: 14px;
+  top: 16px;
+}
+/* line 66, ../sass/_section.scss */
+#sec .wrap section .sec_left .sec_con .sec_con_right {
+  width: 680px;
+  height: 334px;
+  float: left;
+}
+/* line 73, ../sass/_section.scss */
+#sec .wrap section .sec_right {
+  width: 170px;
+  height: 421px;
+  float: left;
+  border-left: 1px solid #f6f6f6;
+  position: relative;
+}
+/* line 79, ../sass/_section.scss */
+#sec .wrap section .sec_right img {
+  margin-left: 81px;
+  position: absolute;
+  width: 71px;
+  background: 0;
+}
+/* line 85, ../sass/_section.scss */
+#sec .wrap section .sec_right p {
+  margin-left: 20.5px;
+  font-size: 14px;
+  color: #999;
+  margin-top: 7px;
+  width: 130px;
+  height: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 95, ../sass/_section.scss */
+#sec .wrap section .sec_right .sec_r_title {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+/* line 100, ../sass/_section.scss */
+#sec .wrap section .sec_right .sec_r_box {
+  overflow: hidden;
+  position: absolute;
+  height: 317px;
+  width: 120px;
+  left: 28px;
+  bottom: 39px;
+}
+/* line 107, ../sass/_section.scss */
+#sec .wrap section .sec_right .sec_r_box .sec_r_content {
+  width: 1000px;
+  height: 100%;
+  transition: all .5s ease;
+  position: relative;
+  left: 10px;
+}
+/* line 115, ../sass/_section.scss */
+#sec .wrap section .sec_right span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  color: #fff;
+  bottom: 20px;
+  text-align: center;
+  line-height: 16px;
+  background: #d5d5d5;
+  cursor: pointer;
+}
+/* line 126, ../sass/_section.scss */
+#sec .wrap section .sec_right span i {
+  font-size: 13px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: "iconfont";
+}
+/* line 134, ../sass/_section.scss */
+#sec .wrap section .sec_right .btn_left {
+  left: 60px;
+  background-color: #ebebeb;
+}
+/* line 138, ../sass/_section.scss */
+#sec .wrap section .sec_right .btn_right {
+  left: 94px;
+}
+/* line 140, ../sass/_section.scss */
+#sec .wrap section .sec_right .btn_right i {
+  left: 1px;
+}
+
+/* line 147, ../sass/_section.scss */
+#sec .wrap .section_2 .sec_left .sec_title .sec_big {
+  color: #E451A8;
+}
+/* line 150, ../sass/_section.scss */
+#sec .wrap .section_2 .sec_left .sec_title .sec_small {
+  color: rgba(228, 81, 168, 0.7);
+}
+
+/* line 154, ../sass/_section.scss */
+#sec .wrap .sec_left .sec_type div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  width: 74px;
+  height: 23px;
+  text-align: center;
+  line-height: 23px;
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* line 168, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two {
+  width: 335px;
+  height: 167px;
+  position: relative;
+  float: left;
+  background-color: #faf7f6;
+}
+/* line 174, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two p {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 30px;
+  font-size: 14px;
+}
+/* line 182, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two p:nth-child(1) {
+  margin-top: 40px;
+}
+/* line 185, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two p:nth-child(2) {
+  margin-top: 5px;
+}
+/* line 188, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two div {
+  width: 78px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  margin-top: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 30px;
+  font-size: 14px;
+}
+/* line 199, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two img {
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  bottom: 27px;
+  transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+}
+/* line 207, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .two img:hover {
+  transform: translate3d(-5px, 0, 0);
+}
+
+/* line 213, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one {
+  float: left;
+  position: relative;
+  width: 167px;
+  height: 167px;
+  cursor: pointer;
+}
+/* line 219, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one p {
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+  height: 14px;
+  width: 102px;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+/* line 228, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one img {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+}
+/* line 237, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one img:hover {
+  transform: translate3d(-5px, 0, 0);
+}
+/* line 241, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one p:nth-child(1) {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+/* line 245, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one p:nth-child(2) {
+  font-weight: bold;
+  margin-left: 13px;
+  margin-top: -1px;
+}
+/* line 251, ../sass/_section.scss */
+#sec .wrap section .sec_con_right .one_border {
+  border-right: 1px solid #f6f6f6;
+}
+
+/* line 256, ../sass/_section.scss */
+#sec .wrap .section_1 .sec_con_right .two p:nth-child(1) {
+  color: #3c8020;
+}
+/* line 259, ../sass/_section.scss */
+#sec .wrap .section_1 .sec_con_right .two p:nth-child(2) {
+  color: #69b14b;
+}
+/* line 262, ../sass/_section.scss */
+#sec .wrap .section_1 .sec_con_right .two div {
+  border: 1px solid rgba(114, 191, 37, 0.5);
+  color: #72bf25;
+}
+
+/* line 268, ../sass/_section.scss */
+#sec .wrap .section_2 .sec_con_right .two p:nth-child(1) {
+  color: #6a1752;
+}
+/* line 271, ../sass/_section.scss */
+#sec .wrap .section_2 .sec_con_right .two p:nth-child(2) {
+  color: #a858a0;
+}
+/* line 274, ../sass/_section.scss */
+#sec .wrap .section_2 .sec_con_right .two div {
+  border: 1px solid rgba(209, 90, 160, 0.5);
+  color: #D15AA0;
+}
+
+/* line 280, ../sass/_section.scss */
+#sec .wrap .section_3 .sec_con_right .two p:nth-child(1) {
+  color: #1e389a;
+}
+/* line 283, ../sass/_section.scss */
+#sec .wrap .section_3 .sec_con_right .two p:nth-child(2) {
+  color: #1e389a;
+}
+/* line 286, ../sass/_section.scss */
+#sec .wrap .section_3 .sec_con_right .two div {
+  border: 1px solid rgba(100, 126, 220, 0.5);
+  color: #647EDC;
+}
+
+/* line 291, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul {
+  position: relative;
+  height: 100%;
+  float: left;
+  left: 2px;
+  margin-right: 120px;
+  transition: left .6s ease;
+}
+/* line 298, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul a:nth-child(1) li {
+  margin-top: 13px;
+}
+/* line 301, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul li {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+/* line 311, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul li div {
+  position: absolute;
+  font-size: 12px;
+  color: #fff;
+  width: 40px;
+  height: 16px;
+  text-align: center;
+  font-family: Tahoma;
+  font-weight: bold;
+}
+/* line 321, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul li .top1 {
+  background: url(../images/top1.png);
+}
+/* line 324, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul li .top2 {
+  background: url(../images/top2.png);
+}
+/* line 327, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul li .top3 {
+  background: url(../images/top3.png);
+}
+/* line 330, ../sass/_section.scss */
+#sec .sec_right .sec_r_content ul li img {
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 60px;
+  height: 60px;
 }
 
 /* line 2, ../sass/_want.scss */
@@ -857,12 +1422,23 @@ aside .a_bottom i {
   left: 460px;
 }
 
-/* line 27, ../sass/_want.scss */
-.want_bottom ul {
-  height: 4920px;
-  background-color: tomato;
+/* line 28, ../sass/_want.scss */
+.want_bottom ul .goods {
+  width: 168px;
+  background-color: #fff;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
 }
-/* line 31, ../sass/_want.scss */
+/* line 38, ../sass/_want.scss */
+.want_bottom ul .goods .wrap {
+  width: 150px;
+  margin: 10px;
+}
+/* line 44, ../sass/_want.scss */
 .want_bottom .loading {
   position: relative;
   left: 0;
@@ -871,12 +1447,12 @@ aside .a_bottom i {
   height: 80px;
   background: #f5f5f5 url(../images/loading.gif) no-repeat center center;
 }
-/* line 40, ../sass/_want.scss */
+/* line 53, ../sass/_want.scss */
 .want_bottom .floor {
   height: 90px;
   position: relative;
 }
-/* line 43, ../sass/_want.scss */
+/* line 56, ../sass/_want.scss */
 .want_bottom .floor .line {
   position: absolute;
   width: 100px;
@@ -884,15 +1460,15 @@ aside .a_bottom i {
   background: #e2e2e2;
   top: 42px;
 }
-/* line 50, ../sass/_want.scss */
+/* line 63, ../sass/_want.scss */
 .want_bottom .floor .line_left {
   left: 355px;
 }
-/* line 53, ../sass/_want.scss */
+/* line 66, ../sass/_want.scss */
 .want_bottom .floor .line_right {
   left: 605px;
 }
-/* line 56, ../sass/_want.scss */
+/* line 69, ../sass/_want.scss */
 .want_bottom .floor .content {
   font-size: 16px;
   color: #666;
@@ -902,6 +1478,109 @@ aside .a_bottom i {
   position: absolute;
   left: 495px;
   top: 30px;
+}
+
+/* line 82, ../sass/_want.scss */
+.want_bottom ul .goods .wrap img {
+  width: 150px;
+}
+/* line 85, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .box {
+  width: 168px;
+  margin-left: -10px;
+}
+/* line 88, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .box .title {
+  word-break: break-all;
+  width: 150px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  transition: all .3s ease;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+/* line 102, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .box .price {
+  display: block;
+  margin-left: 8px;
+  font-size: 14px;
+  color: #ff4040;
+  font-weight: bold;
+  margin-top: 8px;
+  float: left;
+}
+/* line 110, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .box .price span {
+  font-family: Tahoma;
+  font-size: 14px;
+  margin-left: -3px;
+}
+/* line 117, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover {
+  opacity: 1;
+  margin-left: -10px;
+  filter: Alpha(opacity=0);
+  width: 168px;
+  height: 74px;
+  position: absolute;
+  bottom: 0;
+  z-index: 805;
+  transition: all .5s ease;
+}
+/* line 127, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover .hover_btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 48px;
+}
+/* line 133, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover .hover_btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 140, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover .hover_left {
+  background: #ff4040;
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
+  text-align: left;
+  text-indent: 14px;
+}
+
+/* line 152, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover {
+  display: none;
+}
+/* line 154, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover .icon {
+  font-size: 18px;
+  line-height: 49px;
+  font-family: "iconfont";
+  color: #fff;
+}
+/* line 161, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover_right {
+  background-color: #fff0f0;
+  border: 1px solid #ffcdcd;
+  font-size: 12px;
+  color: #ff4040;
+  left: 92px;
+  bottom: 15px;
+  position: absolute;
+}
+/* line 169, ../sass/_want.scss */
+.want_bottom ul .goods .wrap .hover_right a {
+  color: #ff4040;
 }
 
 /* line 2, ../sass/_footer.scss */
