@@ -115,13 +115,14 @@
         }
     }
     .hover{
-        opacity: 1;
+        display: none;
+        opacity: 0;
         margin-left: -10px;
         filter: Alpha(opacity=0);
         width: 168px;
         height: 74px;
         position: absolute;
-        bottom: 0;
+        bottom: -5px;
         z-index: 805;
         transition: all .5s ease;
         .hover_btn{
@@ -148,9 +149,17 @@
         }
     }
 }
+.want_bottom .render_ul .goods:hover{
+    // @include border(1px,solid,#ff4040);
+    .hover{
+        background-color: rgba(255,255,255,0.8);
+        display: block;
+        opacity: 1;
+        // border-bottom: 1px solid #ff4040;
+    }
+}
 .want_bottom ul .goods .wrap {
     .hover{
-        display: none;
         .icon{
             font-size: 18px;
             line-height: 49px;
