@@ -1,8 +1,13 @@
 import "jquery";//引入jquery
-import { HF } from "./includeHF.js";//引入页头页尾
+import "../css/index.css";
+import "../css/details.css";
+// import ".../css/.css";
+import { Fixed,HF,Banner,Aside,Floor } from "./Header.js";//添加头部固定
 new HF().init();
-import { Fixed } from "./headerfixed.js";//添加头部固定
 new Fixed().init();
+new Banner().init();
+new Aside().init();
+new Floor().init();
 import{ Render } from "./indexrender.js";
 new Render().init();
 

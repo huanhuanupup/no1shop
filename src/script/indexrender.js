@@ -22,7 +22,7 @@ class Render{
                             </div>
                             <div class="hover">
                                 <div class="hover_btn hover_left">
-                                    <a href="#">
+                                    <a href="http://localhost/no1shop/src/details.html?sid=${value.sid}">
                                         <i class="icon"></i>
                                     </a>
                                 </div>
