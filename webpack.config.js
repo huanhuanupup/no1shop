@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 通过 npm 安装
+const CopyWebpackPlugin = require("copy-webpack-plugin");//复制文件插件
 
 module.exports = {
     mode: "development",
@@ -25,13 +26,18 @@ module.exports = {
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
         },
+        {
+            test: /\.(eot|svg|ttf|woff|woff2)\w*/,
+            loader: 'url-loader?limit=1000000'
+        },
         { //配置图片文件的包
             test: /\.(png|jpg|gif|svg)$/,
             loader: 'file-loader',
             options: {
                 name: 'images/[name].[ext]'//images/[name].[ext]
             }
-        }]
+        }
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -63,6 +69,18 @@ module.exports = {
                 removeComment: true, //去掉注释
                 collapseWhitespace: true //去掉空格。
             }
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: "./src/fonts",
+                to  : "fonts"
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: "./src/images",
+                to  : "images"
+            }
+        ]),
     ]
 }

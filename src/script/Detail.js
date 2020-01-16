@@ -11,10 +11,14 @@ class Detail {
         this.img = $('.sel_color .item img');
         this.right = $('.diconr');
         this.left = $('.diconl');
+        this.add = $('.add');
+        this.reduce = $('.reduce');
+        this.Dvalue = $('.goodsnum');
         this.id = location.search.split('=')[1];
     }
     init() {
         this.render();//渲染
+        this.count();//计算件数
         this.spic.hover(() => {//鼠标移入小图
             this.sf.show();
             this.bf.show();
@@ -90,6 +94,50 @@ class Detail {
                 `
             });
             this.ul.append(str);
+            this.list = $('.img_wrap ul li');
+            this.num = this.list.size();
+            this.tab();
+        })
+    }
+    tab() {
+        let _this = this;
+        this.right.on('click', () => {
+            // console.log(_this.num);
+            this.ul.stop(true).animate({
+                left: -(_this.num - 5) * _this.list.outerWidth(true)
+            })
+        })
+        this.left.on('click', () => {
+            this.ul.stop(true).animate({
+                left: 0
+            })
+        })
+    }
+    count() {
+        // let co = parseInt(this.Dvalue.val());
+        this.add.on('click', () => {
+            let co = this.Dvalue.val();
+            co++;
+            this.Dvalue.val(co);
+        })
+
+        this.reduce.on('click', () => {
+            let co = this.Dvalue.val();
+            co--;
+            if (co < 2) {
+                co = 1;
+            }
+            this.Dvalue.val(co);
+        })
+
+        this.Dvalue.change(()=>{
+            let co=this.Dvalue.val();
+            if(co<=1){
+                co=1;
+            }else if(co==''){
+                co=1;
+            }
+            this.Dvalue.val(co);
         })
     }
 }
